@@ -174,4 +174,4 @@ def update_quote(quote_id):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5012)
+    app.run(debug=False, port=5012)
