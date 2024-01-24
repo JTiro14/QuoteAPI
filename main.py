@@ -10,7 +10,7 @@ app = Flask(__name__)
 load_dotenv(find_dotenv())
 
 # api-key
-API_KEY = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b"
+API_KEY = os.environ.get('API_KEY')
 
 # connect to DB
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_URI', 'sqlite:///quotes.db')
